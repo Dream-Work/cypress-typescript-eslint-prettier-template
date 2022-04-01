@@ -17,7 +17,7 @@
     "url": "https://github.com/Dream-Work/cypress-typescript-eslint-prettier-template/issues"
   },
   "homepage": "https://github.com/Dream-Work/cypress-typescript-eslint-prettier-template#readme",
-    "dependencies": {
+  "dependencies": {
     "cypress": "9.5.3"
   },
   "devDependencies": {
