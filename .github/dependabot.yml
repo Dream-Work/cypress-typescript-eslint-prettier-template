@@ -14,3 +14,6 @@ updates:
     # Update the npm manifest file to relax
     # the version requirements
     versioning-strategy: widen
+    commit-message:
+      # Prefix all commit messages with "npm"
+      prefix: "chore(deps): "
