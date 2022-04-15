@@ -3,7 +3,7 @@
 /// JSON fixture file can be loaded directly using
 // the built-in JavaScript bundler
 // @ts-ignore
-const requiredExample = require('../../fixtures/example')
+const requiredExample = require('../../../fixtures/examples/example')
 
 context('Files', () => {
   beforeEach(() => {
@@ -24,7 +24,7 @@ context('Files', () => {
 
     // when application makes an Ajax request matching "GET **/comments/*"
     // Cypress will intercept it and reply with the object in `example.json` fixture
-    cy.intercept('GET', '**/comments/*', { fixture: 'example.json' }).as('getComment')
+    cy.intercept('GET', '**/comments/*', { fixture: 'examples/example.json' }).as('getComment')
 
     // we have code that gets a comment when
     // the button is clicked in scripts.js
@@ -66,22 +66,22 @@ context('Files', () => {
     // generate a fixture file for use later
     cy.request('https://jsonplaceholder.cypress.io/users')
       .then((response) => {
-        cy.writeFile('cypress/fixtures/users.json', response.body)
+        cy.writeFile('cypress/fixtures/examples/users.json', response.body)
       })
 
-    cy.fixture('users').should((users) => {
+    cy.fixture('examples/users').should((users) => {
       expect(users[0].name).to.exist
     })
 
     // JavaScript arrays and objects are stringified
     // and formatted into text.
-    cy.writeFile('cypress/fixtures/profile.json', {
+    cy.writeFile('cypress/fixtures/examples/profile.json', {
       id: 8739,
       name: 'Jane',
       email: 'jane@example.com',
     })
 
-    cy.fixture('profile').should((profile) => {
+    cy.fixture('examples/profile').should((profile) => {
       expect(profile.name).to.eq('Jane')
     })
   })
