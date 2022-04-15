@@ -15,7 +15,9 @@
     "typescript",
     "eslint",
     "prettier",
-    "template"
+    "template",
+    "dependabot",
+    "cypress-grep"
   ],
   "author": "Sven Marnitz",
   "license": "ISC",
@@ -28,6 +30,9 @@
   },
   "devDependencies": {
     "@types/node": "17.0.24",
+    "@typescript-eslint/eslint-plugin": "5.18.0",
+    "@typescript-eslint/parser": "5.18.0",
+    "cypress-grep": "2.13.1",
     "eslint": "8.13.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-cypress": "2.12.1",

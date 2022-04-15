@@ -13,6 +13,8 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require('cypress-grep')();
 // Import commands.js using ES2015 syntax:
 import './commands';
 
