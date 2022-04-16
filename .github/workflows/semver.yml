@@ -18,13 +18,6 @@ jobs:
         id: semantic
         with:
           semantic_version: 18
-          extra_plugins: |
-            @semantic-release/commit-analyzer
-            @semantic-release/release-notes-generator
-            @semantic-release/changelog
-            @semantic-release/github
-            @semantic-release/npm
-            @semantic-release/git
           branches: |
             [
               '+([0-9])?(.{+([0-9]),x}).x',
