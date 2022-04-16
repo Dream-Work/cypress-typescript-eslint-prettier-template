@@ -25,7 +25,6 @@ jobs:
             @semantic-release/github
             @semantic-release/npm
             @semantic-release/git
-            conventional-changelog-conventionalcommits
           branches: |
             [
               '+([0-9])?(.{+([0-9]),x}).x',
