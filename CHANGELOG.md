@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/Dream-Work/cypress-typescript-eslint-prettier-template/compare/1.11.1...1.12.0) (2022-04-16)
+
+
+### Features
+
+* save screenshots and videos as artifact ([28607d9](https://github.com/Dream-Work/cypress-typescript-eslint-prettier-template/commit/28607d97ffdc0f7bc894e8096d7ac71a4651edf7))
+
 ## [1.11.1](https://github.com/Dream-Work/cypress-typescript-eslint-prettier-template/compare/1.11.0...1.11.1) (2022-04-16)
 
 
