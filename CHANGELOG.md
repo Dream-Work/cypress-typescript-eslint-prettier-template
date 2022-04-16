@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/Dream-Work/cypress-typescript-eslint-prettier-template/compare/1.11.0...1.11.1) (2022-04-16)
+
+
+### Bug Fixes
+
+* remove pull_request and pull_request_target from cypress tests workflow ([1dc5a71](https://github.com/Dream-Work/cypress-typescript-eslint-prettier-template/commit/1dc5a714ba2690be22c66f5a68f94e092c40c21c))
+
 # [1.11.0](https://github.com/Dream-Work/cypress-typescript-eslint-prettier-template/compare/1.10.0...1.11.0) (2022-04-16)
 
 
