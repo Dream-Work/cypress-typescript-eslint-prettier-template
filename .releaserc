@@ -3,17 +3,47 @@
   "tagFormat": "${version}",
   "preset": "conventionalcommits",
   "plugins": [
-    "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
-    "@semantic-release/github",
     ["@semantic-release/commit-analyzer", {
 		  "releaseRules": [
 			  {"type": "chore", "release": "patch"}
-		  ]
+		  ],
+      "parserOpts": {
+        "noteKeywords": [
+          "BREAKING CHANGE",
+          "BREAKING CHANGES",
+          "BREAKING"
+        ]
+      }
 		}],
+    ["@semantic-release/changelog",{
+        "changelogFile": "CHANGELOG.md"
+    }],
     ["@semantic-release/npm", {
       "npmPublish": false
-    }]
+    }],
+    ["@semantic-release/release-notes-generator",{
+      "parserOpts": {
+        "noteKeywords": [
+          "BREAKING CHANGE",
+          "BREAKING CHANGES",
+          "BREAKING"
+        ]
+      },
+      "writerOpts": {
+        "commitsSort": [
+          "subject",
+          "scope"
+        ]
+      }
+    }],
+    ["@semantic-release/git", {
+      "assets": [
+        "CHANGELOG.md",
+        "package.json",
+        "package-lock.json"
+      ]
+    }],
+    "@semantic-release/github"
   ],
   "presetConfig": {
     "types": [
