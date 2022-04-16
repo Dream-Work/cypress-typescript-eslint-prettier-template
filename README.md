@@ -8,6 +8,7 @@
   * disabled publish to npm registry
 * Cypress tests
   * automatic running `npx cypress run`
+  * save screenshots and videos as artifacts
 
 ## Following plugins for VSC needed:
 
