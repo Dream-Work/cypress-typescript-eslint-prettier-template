@@ -18,7 +18,7 @@ jobs:
         id: semantic
         with:
           semantic_version: 18
-          extra_plugins: |
+          plugins: |
             @semantic-release/commit-analyzer
             @semantic-release/release-notes-generator
             @semantic-release/changelog
