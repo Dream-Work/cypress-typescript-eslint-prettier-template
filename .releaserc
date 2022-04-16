@@ -1,16 +1,20 @@
 {
   "branches": ["+([0-9])?(.{+([0-9]),x}).x", "master", {"name": "develop", "prerelease": "rc"}],
   "tagFormat": "${version}",
+  "preset": "conventionalcommits",
   "plugins": [
-    "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     "@semantic-release/github",
+    ["@semantic-release/commit-analyzer", {
+		  "releaseRules": [
+			  {"type": "chore", "release": "patch"}
+		  ]
+		}],
     ["@semantic-release/npm", {
       "npmPublish": false
     }]
   ],
-  "preset": "conventionalcommits",
   "presetConfig": {
     "types": [
       {
