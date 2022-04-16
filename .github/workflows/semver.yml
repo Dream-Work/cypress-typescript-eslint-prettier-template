@@ -1,4 +1,4 @@
-name: Version
+name: Semver
 
 on:
   push:
