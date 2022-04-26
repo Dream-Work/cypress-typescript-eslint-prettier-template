@@ -1,3 +1,5 @@
+## [1.12.6](https://github.com/Dream-Work/cypress-typescript-eslint-prettier-template/compare/1.12.5...1.12.6) (2022-04-26)
+
 ## [1.12.5](https://github.com/Dream-Work/cypress-typescript-eslint-prettier-template/compare/1.12.4...1.12.5) (2022-04-26)
 
 ## [1.12.4](https://github.com/Dream-Work/cypress-typescript-eslint-prettier-template/compare/1.12.3...1.12.4) (2022-04-26)
