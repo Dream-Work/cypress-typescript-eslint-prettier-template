@@ -1,6 +1,6 @@
 {
   "name": "cypress-typescript-eslint-prettier-template",
-  "version": "1.12.21",
+  "version": "1.12.22",
   "description": "",
   "scripts": {
     "cy:open": "npx cypress open",
